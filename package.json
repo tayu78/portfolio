@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w sass:css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tayu78/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tayu78/portfolio/issues"
+  },
+  "homepage": "https://github.com/tayu78/portfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
