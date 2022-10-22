@@ -78,6 +78,24 @@ h3 {
   font-size: 2rem;
 }
 
+.page-container {
+  display: none;
+}
+
+.welcome-content {
+  width: 100vw;
+  height: 100vh;
+  background: #1A0909;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-content p {
+  color: #F56262;
+  font-size: 3.5rem;
+  visibility: hidden;
+}
+
 header {
   background-color: #1A0909;
   width: 100vw;
@@ -95,13 +113,16 @@ header .hero {
   width: 60%;
 }
 header h1 {
+  visibility: hidden;
   color: #F56262;
 }
 header .job-title {
+  visibility: hidden;
   font-size: 3rem;
   margin-top: 1rem;
 }
 header .desc {
+  visibility: hidden;
   font-size: 2rem;
   margin-top: 1rem;
 }
@@ -113,6 +134,9 @@ header nav ul {
   align-items: center;
   gap: 2.5rem;
 }
+header nav li {
+  visibility: hidden;
+}
 header .social-list {
   margin-top: 2rem;
   display: flex;
@@ -120,6 +144,7 @@ header .social-list {
   gap: 2rem;
 }
 header .social-list i {
+  visibility: hidden;
   font-size: 3rem;
   color: #F56262;
 }

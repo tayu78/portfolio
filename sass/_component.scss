@@ -1,5 +1,26 @@
 @use 'base' as *;
 
+
+.page-container{
+    display: none; 
+}
+
+.welcome-content{
+    width: 100vw;
+    height: 100vh;
+    background: $bg-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: $font-pink;
+        font-size: 3.5rem;
+        visibility: hidden;
+    }
+}
+
+
 header {
     background-color: $bg-black;
     width: 100vw;
@@ -18,13 +39,16 @@ header {
     }
 
     h1 {
+        visibility: hidden;
         color: $font-pink;
     }
     .job-title{
+        visibility: hidden;
         font-size: 3rem;
         margin-top: 1rem;
     }
     .desc{
+        visibility: hidden;
         font-size: 2rem;
         margin-top: 1rem;
     }
@@ -39,6 +63,9 @@ header {
             align-items: center;
             gap: 2.5rem;
         }
+        li {
+            visibility: hidden;
+        }
        
     }
 
@@ -48,6 +75,7 @@ header {
         align-items: center;
         gap: 2rem;
         i {
+            visibility: hidden;
             font-size: 3rem;
             color: $font-pink;
         }
