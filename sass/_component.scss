@@ -1,0 +1,225 @@
+@use 'base' as *;
+
+header {
+    background-color: $bg-black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    a {
+        color: $font-pink;
+    }
+
+    .hero{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 2rem;
+        width: 60%;
+    }
+
+    h1 {
+        color: $font-pink;
+    }
+    .job-title{
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    .desc{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    
+    nav{
+        ul {
+            height: 150px;
+            color: $font-pink;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 2.5rem;
+        }
+       
+    }
+
+    .social-list {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        i {
+            font-size: 3rem;
+            color: $font-pink;
+        }
+    }
+    
+   
+}
+
+
+#about{
+    background: $bg-pink;
+    padding: 145px 0;
+    h2{
+        text-align: center;
+    }
+    
+
+    #about-me{
+
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        .container{
+            width: 80%;
+            // margin-left: 3rem;
+        }
+        p{
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    }
+
+    #skils{
+        margin-top: 5rem;
+       
+        ul{
+            display: flex;
+            gap: 2rem;
+            margin-left: 2rem;
+
+            i {
+                font-size: 3rem;
+                color: black;
+            }
+        }
+       
+    }
+
+}
+
+#projects{
+    background: $bg-black;
+    padding: 130px 0;
+
+    h2{
+        color: $font-pink;
+        text-align: center;
+    }
+
+    .project{
+        width: 80%;
+        border: 2px solid $font-pink;
+        border-radius: 2rem;
+        padding: 2rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        transition: .3s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+        .project-content{
+            display: flex;
+            gap: 3rem;
+            img{
+                margin: 2rem;
+                width: 40%;
+            }
+            h3{
+                color:$font-pink;
+                margin-bottom: 2rem;
+            }
+            li{
+                &::before{
+                    content: "";
+                    background-image: url("../images/rocket-solid.svg");
+                    display: inline-block;
+                }
+                // list-style: url("../images/address-card-solid.svg");
+            }
+
+        }
+
+        .icons {
+            i {
+                color: $font-pink;
+                margin-right: 1rem;
+                font-size: 2rem;
+            }
+        }
+       
+
+
+    }
+}
+
+#blogs{
+    position: relative;
+    background: $bg-pink;
+    padding: 130px 0;
+    h2{
+        text-align: center;
+    }
+    .article-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+
+   article{
+    border: 1px solid #fff;
+    padding: .5rem;
+    width: 360px;
+    transition: .3s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    img{
+        width: 100%;
+    }
+    h3{
+        font-size: 1.5rem;
+        margin: .8rem 0;
+    }
+    .article-content{
+        padding: 1.2rem;
+    }
+   }
+
+   .read-more-article{
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    cursor: pointer;
+   }
+}
+
+
+#contact{
+    background: $bg-black;
+    padding: 130px 0;
+    h2{
+        color: $font-pink;
+        text-align: center;
+    }
+    form{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 500px;
+
+        input{
+            padding: .8rem;
+        }
+    }
+}
+
+footer{
+    background: $bg-pink;
+    text-align: center;
+    padding: 1rem 0;
+}

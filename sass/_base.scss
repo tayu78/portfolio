@@ -1,0 +1,31 @@
+$font-pink:#F56262;
+$bg-pink:#B45050;
+$bg-black:#1A0909;
+
+
+body{
+    color: #fff;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+h3{
+    font-size: 2rem;
+}
+
+
+@mixin for-sm-screen {
+    @media screen and (max-width: 768px) {
+        @content
+    }
+}

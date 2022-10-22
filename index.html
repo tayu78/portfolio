@@ -1,140 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script defer src="./js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e00b1b1887.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Yuya Satake</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Project</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact</a></li>
-        </ul>
-    </nav>
-     <header>
-        <h1>YUYA SATAKE<h1>
-        <p class="job-title">Software Developer</p>
-        <p class="desc">I’m a software developer who is passionate about
-            learning new things and enjoy developing</p>
-        <div>
-            <ul>
-                <li><a><img src="./images/social/github.svg" alt="github"/></a></li>
-                <li><a><img src="./images/social/twitter.svg" alt="twitter"/></a></li>
-                <li><a><img src="./images/social/linkedin.svg" alt="linkedin"/></a></li>
-                <li><a><img src="./images/social/file-solid.svg" alt="resume"/></a></li>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hero">
+          <h1>YUYA SATAKE</h1>
+          <p class="job-title">Software Developer</p>
+          <p class="desc">
+            I’m a software developer who is passionate about learning new things
+            and enjoy developing
+          </p>
+          <div>
+            <ul class="social-list">
+              <li>
+                <a><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li>
+                <a><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a><i class="fa-solid fa-file"></i></a>
+              </li>
             </ul>
-        </div>    
-     </header>   
-     <main>
-        <section id="about">
-            <section id="about-me">
-                <h2>About Me</h2>
-                <p>I’m from Japan ,graduated University and have 1 year and 3 months
-                    professional experiences.</p>
-                <p>currently located in Vancouver.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias blanditiis earum quaerat minima neque quis excepturi a harum eligendi iste doloremque voluptate, commodi qui facere vitae cumque rem voluptatibus.</p>
-            </section>
-            <section id="skils">
-                <h2>Skils</h2>
-                <ul>
-                    <li><img src="./images/skils/square-js.svg" /></li>
-                    <li><img src="./images/skils/react.svg" /></li>
-                    <li><img src="./images/skils/node.svg" /></li>
-                <ul>
-            </section>
-        </section>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <div class="container">
+          <section id="about-me">
+            <h2>About Me</h2>
+            <div class="container">
+              <p>
+                I’m a Japanese person who graduated from Electrical and
+                Electronic Engineering and Information Technologies department
+                in University. I have 1 year and 3 months of professional
+                experience in software development.
+              </p>
+              <p>I am currently located in Vancouver.</p>
+              <p>
+                Thinking about logical solutions made me interested in software
+                development.
+              </p>
+            </div>
+          </section>
+          <section id="skils">
+            <h2>Skils</h2>
+            <ul>
+              <li><i class="fa-brands fa-js"></i></li>
+              <li><i class="fa-brands fa-react"></i></li>
+              <li><i class="fa-brands fa-node"></i></li>
+            </ul>
+          </section>
+        </div>
+      </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <div>
-                    <img src="./images/projects/reibun-share.png" />
-                    <div>
-                        <h3>Reibun-Share</h3>
-                        <p>This application</p>
-                        <p>Built with: </p>
-                    </div>
-                </div>  
-                <div>
-                    <img src="./images/social/github.svg"/>
-                    <img src="./images/arrow-up-right-from-square-solid.svg"/>
-                </div>
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project">
+            <div class="project-content">
+              <img src="./images/projects/reibun-share.png" />
+              <div>
+                <h3>Reibun-Share</h3>
+                <p>This application</p>
+                <p>Built with:</p>
+              </div>
             </div>
-            <div class="project">
-                <div>
-                    <img src="./images/projects/reibun-share.png" />
-                    <div>
-                        <h3>KENGEN_KANRI</h3>
-                        <p>This application</p>
-                        <p>Built with: </p>
-                    </div>
-                </div>  
-                <div>
-                    <img src="./images/social/github.svg"/>
-                    <img src="./images/arrow-up-right-from-square-solid.svg"/>
-                </div>
+            <div>
+              <div class="icons">
+                <a><i class="fa-brands fa-github"></i></a>
+                <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
             </div>
-            <div class="project">
-                <div>
-                    <img src="./images/projects/attendance.png" />
-                    <div>
-                        <h3>Attendance</h3>
-                        <p>This application</p>
-                        <p>Built with: </p>
-                    </div>
-                </div>  
-                <div>
-                    <img src="./images/social/github.svg"/>
-                    <img src="./images/arrow-up-right-from-square-solid.svg"/>
-                </div>
+          </div>
+          <div class="project">
+            <div class="project-content">
+              <img src="./images/projects/reibun-share.png" />
+              <div>
+                <h3>KENGEN_KANRI</h3>
+                <p>This application</p>
+                <p>Built with:</p>
+                <ul>
+                  <li>React</li>
+                </ul>
+              </div>
             </div>
-            <div class="project">
-                <div>
-                    <img src="./images/projects/ns-typing.png" />
-                    <div>
-                        <h3>NS-TYPING</h3>
-                        <p>This application</p>
-                        <p>Built with: </p>
-                    </div>
-                </div>  
-                <div>
-                    <img src="./images/social/github.svg"/>
-                    <img src="./images/arrow-up-right-from-square-solid.svg"/>
-                </div>
+            <div>
+              <div class="icons">
+                <a><i class="fa-brands fa-github"></i></a>
+                <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="project">
+            <div class="project-content">
+              <img src="./images/projects/attendance.png" />
+              <div>
+                <h3>Attendance</h3>
+                <p>This application</p>
+                <p>Built with:</p>
+              </div>
+            </div>
+            <div>
+              <div class="icons">
+                <a><i class="fa-brands fa-github"></i></a>
+                <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-content">
+              <img src="./images/projects/ns-typing.png" />
+              <div>
+                <h3>NS-TYPING</h3>
+                <p>This application</p>
+                <p>Built with:</p>
+              </div>
+            </div>
+            <div>
+              <div class="icons">
+                <a><i class="fa-brands fa-github"></i></a>
+                <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="blogs">
-            <h2>Blogs</h2>
+      <section id="blogs">
+        <div class="container">
+          <h2>Blogs</h2>
+          <div class="article-container">
             <article>
-                <img src="./images/blogs/how-to-optimize-react-rendering.jpg" />
+              <img src="./images/blogs/how-to-optimize-react-rendering.jpg" />
+              <div class="article-content">
                 <h3>How to optimize React rendering</h3>
                 <p class="desc">
-                    React is One of the most used framework in terms of Javascript.
-                    Some developer may use it without knowing how to optimize rendering...
+                  React is one of the most used framework in terms of
+                  Javascript. Some developer may use it without knowing how to
+                  optimize rendering...
                 </p>
+              </div>
             </article>
-            <p>Read more article >></p>
-        </section>
+          </div>
 
-        <section id="contacts">
-            <h2>Contacts</h2>
-            <form >
-                <input />
-                <input />
-                <textarea></textarea>
-                <button>Submit</button>
-            </form>
-        </section>
-     </main>
-     <footer>Yuya Satake </footer>
-   
-</body>
+          <p class="read-more-article">Read more article >></p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contacts</h2>
+          <form>
+            <input />
+            <input />
+            <textarea></textarea>
+            <button>Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>Yuya Satake</footer>
+  </body>
 </html>
