@@ -2,7 +2,9 @@
 
 
 .page-container{
-    display: none; 
+    height: 100vh;
+    overflow: hidden;
+    background: $bg-black;
 }
 
 .welcome-content{

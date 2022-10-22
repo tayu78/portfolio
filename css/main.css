@@ -79,7 +79,9 @@ h3 {
 }
 
 .page-container {
-  display: none;
+  height: 100vh;
+  overflow: hidden;
+  background: #1A0909;
 }
 
 .welcome-content {
