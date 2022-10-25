@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
 
   const navAnimationOption = isSmallScreen
     ? [".hamburger", { autoAlpha: 1 }]
-    : [navItem, { autoAlpha: 1, stagger: { each: 0.2 } }];
+    : [navItems, { autoAlpha: 1, stagger: { each: 0.2 } }];
 
   gsap
     .timeline()
@@ -42,4 +42,11 @@ const nav = document.querySelector("nav");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   nav.classList.toggle("active");
+});
+
+nav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    nav.classList.remove("active");
+  });
 });
