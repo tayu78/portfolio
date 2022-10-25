@@ -68,14 +68,29 @@ body {
 h1 {
   font-size: 4rem;
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 
 h2 {
   font-size: 3rem;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 
 h3 {
   font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 .page-container {
@@ -102,6 +117,25 @@ h3 {
     font-size: 1.5rem;
     text-align: center;
   }
+}
+
+.social-list {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .social-list {
+    justify-content: center;
+  }
+}
+.social-list i {
+  font-size: 3rem;
+  color: #F56262;
 }
 
 header {
@@ -132,7 +166,6 @@ header h1 {
 }
 @media screen and (max-width: 768px) {
   header h1 {
-    font-size: 3rem;
     width: 300px;
     margin: 0 auto;
     text-align: center;
@@ -158,8 +191,10 @@ header .desc {
 @media screen and (max-width: 768px) {
   header .desc {
     font-size: 1rem;
-    width: 80%;
+    width: 75%;
     margin: 1rem auto;
+    line-height: 1.2rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -200,21 +235,8 @@ header nav li {
     color: #fff;
   }
 }
-header .social-list {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-@media screen and (max-width: 768px) {
-  header .social-list {
-    justify-content: center;
-  }
-}
 header .social-list i {
   visibility: hidden;
-  font-size: 3rem;
-  color: #F56262;
 }
 
 .hamburger {
@@ -256,7 +278,12 @@ header .social-list i {
 
 #about {
   background: #B45050;
-  padding: 145px 0;
+  padding: 130px 0;
+}
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 100px 0;
+  }
 }
 #about h2 {
   text-align: center;
@@ -265,8 +292,19 @@ header .social-list i {
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
+@media screen and (max-width: 768px) {
+  #about #about-me {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 #about #about-me .container {
   width: 80%;
+}
+@media screen and (max-width: 768px) {
+  #about #about-me .container {
+    width: 95%;
+  }
 }
 #about #about-me p {
   margin-bottom: 1rem;
@@ -289,6 +327,11 @@ header .social-list i {
   background: #1A0909;
   padding: 130px 0;
 }
+@media screen and (max-width: 768px) {
+  #projects {
+    padding: 100px 0;
+  }
+}
 #projects h2 {
   color: #F56262;
   text-align: center;
@@ -309,9 +352,20 @@ header .social-list i {
   display: flex;
   gap: 3rem;
 }
+@media screen and (max-width: 768px) {
+  #projects .project .project-content {
+    flex-direction: column;
+  }
+}
 #projects .project .project-content img {
   margin: 2rem;
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  #projects .project .project-content img {
+    margin: 0;
+    width: 100%;
+  }
 }
 #projects .project .project-content h3 {
   color: #F56262;
@@ -321,6 +375,11 @@ header .social-list i {
   content: "";
   background-image: url("../images/rocket-solid.svg");
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  #projects .project .icons {
+    text-align: right;
+  }
 }
 #projects .project .icons i {
   color: #F56262;
@@ -332,6 +391,11 @@ header .social-list i {
   position: relative;
   background: #B45050;
   padding: 130px 0;
+}
+@media screen and (max-width: 768px) {
+  #blogs {
+    padding: 100px 0;
+  }
 }
 #blogs h2 {
   text-align: center;
@@ -346,6 +410,12 @@ header .social-list i {
   padding: 0.5rem;
   width: 360px;
   transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  #blogs article {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 #blogs article:hover {
   transform: scale(1.1);
@@ -371,19 +441,14 @@ header .social-list i {
   background: #1A0909;
   padding: 130px 0;
 }
+@media screen and (max-width: 768px) {
+  #contact {
+    padding: 100px 0;
+  }
+}
 #contact h2 {
   color: #F56262;
   text-align: center;
-}
-#contact form {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 500px;
-}
-#contact form input {
-  padding: 0.8rem;
 }
 
 footer {

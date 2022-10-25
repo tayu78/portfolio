@@ -26,6 +26,24 @@
     }
 }
 
+.social-list {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @include for-sm-screen{
+        justify-content: center;
+    }
+
+    i {
+        font-size: 3rem;
+        color: $font-pink;
+    }
+}
 
 header {
     background-color: $bg-black;
@@ -52,7 +70,6 @@ header {
         visibility: hidden;
         color: $font-pink;
        @include for-sm-screen{
-        font-size: 3rem;
         width: 300px;
         margin: 0 auto;
         text-align: center;
@@ -76,8 +93,10 @@ header {
         margin-top: 1rem;
         @include for-sm-screen{
             font-size: 1rem;
-            width: 80%;
+            width: 75%;
             margin: 1rem auto;
+            line-height: 1.2rem;
+            text-align: center;
         }
     }
 
@@ -125,22 +144,9 @@ header {
     }
 
     .social-list {
-        margin-top: 2rem;
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-
-        @include for-sm-screen{
-            justify-content: center;
-        }
-
-
         i {
             visibility: hidden;
-            font-size: 3rem;
-            color: $font-pink;
         }
-       
     }
     
    
@@ -197,7 +203,12 @@ header {
 
 #about{
     background: $bg-pink;
-    padding: 145px 0;
+    padding: 130px 0;
+    @include for-sm-screen{
+        padding: 100px 0; 
+    }
+
+
     h2{
         text-align: center;
     }
@@ -207,9 +218,17 @@ header {
 
         font-size: 1.5rem;
         line-height: 2.5rem;
+        @include for-sm-screen{
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
         .container{
             width: 80%;
             // margin-left: 3rem;
+            @include for-sm-screen{
+               width: 95%;
+                
+            }
         }
         p{
             margin-bottom: 1rem;
@@ -238,6 +257,9 @@ header {
 #projects{
     background: $bg-black;
     padding: 130px 0;
+    @include for-sm-screen{
+        padding: 100px 0; 
+    }
 
     h2{
         color: $font-pink;
@@ -259,9 +281,18 @@ header {
         .project-content{
             display: flex;
             gap: 3rem;
+
+            @include for-sm-screen{
+                flex-direction: column;
+            }
+
             img{
                 margin: 2rem;
                 width: 40%;
+                @include for-sm-screen{
+                    margin: 0;
+                    width: 100%;
+                }
             }
             h3{
                 color:$font-pink;
@@ -279,6 +310,9 @@ header {
         }
 
         .icons {
+            @include for-sm-screen{
+                text-align:right;
+            }
             i {
                 color: $font-pink;
                 margin-right: 1rem;
@@ -286,8 +320,6 @@ header {
             }
         }
        
-
-
     }
 }
 
@@ -295,6 +327,9 @@ header {
     position: relative;
     background: $bg-pink;
     padding: 130px 0;
+    @include for-sm-screen{
+        padding: 100px 0; 
+    }
     h2{
         text-align: center;
     }
@@ -310,9 +345,15 @@ header {
     padding: .5rem;
     width: 360px;
     transition: .3s;
+    @include for-sm-screen{
+       width: 90%;
+       margin: 0 auto;
+
+    }
 
     &:hover{
         transform: scale(1.1);
+
     }
 
     img{
@@ -333,27 +374,23 @@ header {
     bottom: 3rem;
     cursor: pointer;
    }
+
+  
 }
 
 
 #contact{
     background: $bg-black;
     padding: 130px 0;
+    @include for-sm-screen{
+        padding: 100px 0; 
+    }
     h2{
         color: $font-pink;
         text-align: center;
     }
-    form{
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        max-width: 500px;
-
-        input{
-            padding: .8rem;
-        }
-    }
+    
+   
 }
 
 footer{

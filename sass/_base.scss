@@ -5,6 +5,13 @@ $bg-black:#1A0909;
 
 $offsetForURLBar: 200px;
 
+@mixin for-sm-screen {
+    @media screen and (max-width: 768px) {
+        @content
+    }
+}
+
+
 body{
     color: #fff;
 }
@@ -16,18 +23,22 @@ body{
 
 h1{
     font-size: 4rem;
+    @include for-sm-screen{
+        font-size: 3rem;
+    }
 }
 h2{
     font-size: 3rem;
     margin-bottom: 50px;
+    @include for-sm-screen{
+        font-size: 2rem;
+    }
 }
 h3{
     font-size: 2rem;
-}
-
-
-@mixin for-sm-screen {
-    @media screen and (max-width: 768px) {
-        @content
+    @include for-sm-screen{
+        font-size: 1rem;
     }
 }
+
+
