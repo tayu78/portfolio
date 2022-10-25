@@ -62,7 +62,7 @@ header {
             top: 0;
             right: -100%;
             width: 100vw;
-            height: calc(100vh + 100px);
+            height: calc(100vh + $offsetForURLBar);
             background-color: $bg-pink;
             z-index: 100;
             transition: .3s ease-in;

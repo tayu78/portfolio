@@ -134,7 +134,7 @@ header .desc {
     top: 0;
     right: -100%;
     width: 100vw;
-    height: calc(100vh + 100px);
+    height: calc(100vh + 200px);
     background-color: #B45050;
     z-index: 100;
     transition: 0.3s ease-in;

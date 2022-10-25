@@ -42,6 +42,11 @@ const nav = document.querySelector("nav");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   nav.classList.toggle("active");
+  if (hamburger.classList.contains("active")) {
+    document.querySelector("body").style.overflow = "hidden";
+  } else {
+    document.querySelector("body").style.overflow = "auto";
+  }
 });
 
 nav.querySelectorAll("a").forEach((link) => {
