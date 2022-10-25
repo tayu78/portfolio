@@ -51,6 +51,7 @@ hamburger.addEventListener("click", () => {
 
 nav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
+    document.querySelector("body").style.overflow = "scroll";
     hamburger.classList.remove("active");
     nav.classList.remove("active");
   });
