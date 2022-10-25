@@ -57,6 +57,22 @@ header {
 
     
     nav{
+        @include for-sm-screen{
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100vw;
+            height: 100vh;
+            background-color: $bg-pink;
+            z-index: 100;
+            transition: .3s ease-in;
+
+            &.active{
+                right: 0;
+            }
+        }
+
+
         ul {
             height: 150px;
             color: $font-pink;
@@ -64,9 +80,20 @@ header {
             justify-content: flex-end;
             align-items: center;
             gap: 2.5rem;
+
+            @include for-sm-screen{
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-top: 5rem;
+            }
         }
         li {
             visibility: hidden;
+        }
+        a {
+            @include for-sm-screen{
+                color: #fff;
+            }
         }
        
     }
@@ -85,6 +112,54 @@ header {
     
    
 }
+
+
+
+.hamburger{
+    display: none;
+
+    @include for-sm-screen{
+        visibility: hidden;
+        display: flex;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+        flex-direction: column;
+        width: 30px;
+        z-index: 1000;
+       
+        .bar{
+            width: 100%;
+            height: 5px;
+            background: $font-pink;
+            transition: .3s ease-in;
+        }
+
+        &.active{
+            .bar{
+                background-color: #fff;
+              &:nth-child(2){
+                opacity: 0;
+              }
+              &:first-child{
+                transform: translateY(10px) rotate(-45deg);
+              }
+              &:last-child{
+                transform: translateY(-10px) rotate(45deg);
+              }
+            }
+        }
+
+    }
+}
+
+
+
+
+
 
 
 #about{
