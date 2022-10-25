@@ -1,4 +1,5 @@
 window.addEventListener("load", () => {
+  const innerHeight = window.innerHeight;
   const welcomeContent = document.querySelector(".welcome-content p");
   welcomeContent.textContent = "Hi, Welcome to my portfolio!";
 
@@ -32,6 +33,8 @@ window.addEventListener("load", () => {
       duration: 0.3,
       stagger: { each: 0.2 },
     });
+
+  scrollTrigger(innerHeight);
 });
 
 /*
@@ -56,3 +59,46 @@ nav.querySelectorAll("a").forEach((link) => {
     nav.classList.remove("active");
   });
 });
+
+const scrollAnimation = (
+  innerHeight,
+  target,
+  trigger = target,
+  startTrigger = 70
+) => {
+  gsap.from(target, {
+    duration: 1,
+    autoAlpha: 0,
+    scrollTrigger: {
+      trigger: trigger,
+      start: `-=${innerHeight} ${startTrigger}%`,
+    },
+  });
+};
+
+const scrollTrigger = (innerHeight) => {
+  const h2s = gsap.utils.toArray("h2");
+  h2s.forEach((h2) => {
+    scrollAnimation(innerHeight, h2);
+  });
+
+  scrollAnimation(innerHeight, "#about-me");
+  scrollAnimation(innerHeight, "#skils");
+
+  const projects = gsap.utils.toArray(".project");
+  projects.forEach((project) => {
+    scrollAnimation(innerHeight, project);
+  });
+  const blogs = gsap.utils.toArray("article");
+
+  blogs.forEach((blog) => {
+    scrollAnimation(innerHeight, blog);
+  });
+
+  scrollAnimation(
+    innerHeight,
+    "#contact .social-list i",
+    "#contact .social-list i",
+    90
+  );
+};

@@ -122,11 +122,13 @@ h3 {
 .social-list {
   display: flex;
   gap: 5rem;
-  justify-content: center;
   margin-top: 2rem;
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+.social-list i {
+  visibility: hidden;
 }
 @media screen and (max-width: 768px) {
   .social-list {
@@ -289,6 +291,7 @@ header .social-list i {
   text-align: center;
 }
 #about #about-me {
+  visibility: hidden;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
@@ -311,6 +314,7 @@ header .social-list i {
   text-align: center;
 }
 #about #skils {
+  visibility: hidden;
   margin-top: 5rem;
 }
 #about #skils ul {
@@ -346,7 +350,7 @@ header .social-list i {
   transition: 0.3s;
 }
 #projects .project:hover {
-  transform: scale(1.05);
+  transform: scale(0.9);
 }
 #projects .project .project-content {
   display: flex;
@@ -418,7 +422,7 @@ header .social-list i {
   }
 }
 #blogs article:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 #blogs article img {
   width: 100%;
@@ -449,6 +453,9 @@ header .social-list i {
 #contact h2 {
   color: #F56262;
   text-align: center;
+}
+#contact .social-list {
+  justify-content: center;
 }
 
 footer {

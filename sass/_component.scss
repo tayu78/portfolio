@@ -29,11 +29,13 @@
 .social-list {
     display: flex;
     gap: 5rem;
-    justify-content: center;
     margin-top: 2rem;
     display: flex;
     align-items: center;
     gap: 2rem;
+    i {
+        visibility: hidden;
+    }
 
     @include for-sm-screen{
         justify-content: center;
@@ -215,7 +217,7 @@ header {
     
 
     #about-me{
-
+        visibility: hidden;
         font-size: 1.5rem;
         line-height: 2.5rem;
         @include for-sm-screen{
@@ -237,6 +239,7 @@ header {
     }
 
     #skils{
+        visibility: hidden;
         margin-top: 5rem;
        
         ul{
@@ -276,7 +279,7 @@ header {
         transition: .3s;
 
         &:hover{
-            transform: scale(1.05);
+            transform: scale(0.9);
         }
         .project-content{
             display: flex;
@@ -352,7 +355,7 @@ header {
     }
 
     &:hover{
-        transform: scale(1.1);
+        transform: scale(0.9);
 
     }
 
@@ -389,7 +392,9 @@ header {
         color: $font-pink;
         text-align: center;
     }
-    
+    .social-list {
+        justify-content: center;
+    }
    
 }
 
