@@ -45,7 +45,7 @@ hamburger.addEventListener("click", () => {
   if (hamburger.classList.contains("active")) {
     document.querySelector("body").style.overflow = "hidden";
   } else {
-    document.querySelector("body").style.overflow = "auto";
+    document.querySelector("body").style.overflow = "scroll";
   }
 });
 
