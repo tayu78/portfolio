@@ -97,6 +97,12 @@ h3 {
   font-size: 3.5rem;
   visibility: hidden;
 }
+@media screen and (max-width: 768px) {
+  .welcome-content p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
 
 header {
   background-color: #1A0909;
@@ -114,19 +120,47 @@ header .hero {
   margin-left: 2rem;
   width: 60%;
 }
+@media screen and (max-width: 768px) {
+  header .hero {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 header h1 {
   visibility: hidden;
   color: #F56262;
+}
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 3.5rem;
+  }
 }
 header .job-title {
   visibility: hidden;
   font-size: 3rem;
   margin-top: 1rem;
 }
+@media screen and (max-width: 768px) {
+  header .job-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 header .desc {
   visibility: hidden;
   font-size: 2rem;
   margin-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+  header .desc {
+    font-size: 1rem;
+    width: 80%;
+    margin: 1rem auto;
+  }
 }
 @media screen and (max-width: 768px) {
   header nav {
@@ -171,6 +205,11 @@ header .social-list {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+  header .social-list {
+    justify-content: center;
+  }
 }
 header .social-list i {
   visibility: hidden;

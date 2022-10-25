@@ -19,6 +19,10 @@
         color: $font-pink;
         font-size: 3.5rem;
         visibility: hidden;
+        @include for-sm-screen{
+            font-size: 1.5rem;
+            text-align: center;
+        }
     }
 }
 
@@ -38,21 +42,43 @@ header {
         transform: translateY(-50%);
         margin-left: 2rem;
         width: 60%;
+        @include for-sm-screen{
+            margin-left: 0;
+            width: 100%;
+        }
     }
 
     h1 {
         visibility: hidden;
         color: $font-pink;
+       @include for-sm-screen{
+        font-size: 3rem;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 3.5rem;
+       }
+        
     }
     .job-title{
         visibility: hidden;
         font-size: 3rem;
         margin-top: 1rem;
+
+        @include for-sm-screen{
+            font-size: 2rem;
+            text-align: center;
+        }
     }
     .desc{
         visibility: hidden;
         font-size: 2rem;
         margin-top: 1rem;
+        @include for-sm-screen{
+            font-size: 1rem;
+            width: 80%;
+            margin: 1rem auto;
+        }
     }
 
     
@@ -103,11 +129,18 @@ header {
         display: flex;
         align-items: center;
         gap: 2rem;
+
+        @include for-sm-screen{
+            justify-content: center;
+        }
+
+
         i {
             visibility: hidden;
             font-size: 3rem;
             color: $font-pink;
         }
+       
     }
     
    
