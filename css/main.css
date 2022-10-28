@@ -320,7 +320,8 @@ header .social-list i {
 #about #skils ul {
   display: flex;
   gap: 2rem;
-  margin-left: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #about #skils ul i {
   font-size: 3rem;
@@ -485,6 +486,9 @@ header .social-list i {
 }
 #contact .social-list {
   justify-content: center;
+}
+#contact .social-list i {
+  font-size: 2rem;
 }
 
 footer {

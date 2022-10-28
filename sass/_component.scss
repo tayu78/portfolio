@@ -245,7 +245,9 @@ header {
         ul{
             display: flex;
             gap: 2rem;
-            margin-left: 2rem;
+            // margin-left: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
 
             i {
                 font-size: 3rem;
@@ -424,6 +426,9 @@ header {
     }
     .social-list {
         justify-content: center;
+        i{
+            font-size: 2rem;
+        }
     }
    
 }
