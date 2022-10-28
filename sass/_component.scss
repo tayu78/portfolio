@@ -301,18 +301,11 @@ header {
                 color:$font-pink;
                 margin-bottom: 2rem;
             }
-            li{
-                &::before{
-                    content: "";
-                    background-image: url("../images/rocket-solid.svg");
-                    display: inline-block;
-                }
-                // list-style: url("../images/address-card-solid.svg");
-            }
-
+          
         }
 
         .icons {
+            text-align:right;
             @include for-sm-screen{
                 text-align:right;
             }
@@ -322,9 +315,38 @@ header {
                 font-size: 2rem;
             }
         }
+
+        .stacks {
+            display: flex;
+            gap: .8rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+            
+           
+            
+            li{
+                background: $font-pink;
+                padding: .8rem;
+                border-radius: 1rem;
+                font-size: .8rem;
+            }
+        }
+
+        .ongoing{
+            font-size: .5rem;
+            margin-left:.5rem;
+            color: #fff;
+            background-color: green;
+            padding: .5rem;
+            border-radius: 1rem;
+        }
+        
+
        
     }
 }
+
+
 
 #blogs{
     position: relative;
@@ -358,7 +380,9 @@ header {
         transform: scale(0.9);
 
     }
-
+    a {
+        color: #fff;
+    }
     img{
         width: 100%;
     }

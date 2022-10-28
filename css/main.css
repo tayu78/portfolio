@@ -375,10 +375,8 @@ header .social-list i {
   color: #F56262;
   margin-bottom: 2rem;
 }
-#projects .project .project-content li::before {
-  content: "";
-  background-image: url("../images/rocket-solid.svg");
-  display: inline-block;
+#projects .project .icons {
+  text-align: right;
 }
 @media screen and (max-width: 768px) {
   #projects .project .icons {
@@ -389,6 +387,26 @@ header .social-list i {
   color: #F56262;
   margin-right: 1rem;
   font-size: 2rem;
+}
+#projects .project .stacks {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+#projects .project .stacks li {
+  background: #F56262;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+}
+#projects .project .ongoing {
+  font-size: 0.5rem;
+  margin-left: 0.5rem;
+  color: #fff;
+  background-color: green;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
 #blogs {
@@ -423,6 +441,9 @@ header .social-list i {
 }
 #blogs article:hover {
   transform: scale(0.9);
+}
+#blogs article a {
+  color: #fff;
 }
 #blogs article img {
   width: 100%;
