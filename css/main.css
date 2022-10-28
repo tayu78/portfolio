@@ -375,6 +375,14 @@ header .social-list i {
   color: #F56262;
   margin-bottom: 2rem;
 }
+#projects .project .project-content p {
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 768px) {
+  #projects .project .project-content p {
+    margin-bottom: 1rem;
+  }
+}
 #projects .project .icons {
   text-align: right;
 }
