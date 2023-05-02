@@ -1,0 +1,16 @@
+@use "../../../styles/variables.module" as v;
+
+.projectCard{
+    border: v.$PINK_PRIMARY 1px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
