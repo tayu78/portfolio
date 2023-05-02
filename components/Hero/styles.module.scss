@@ -1,0 +1,36 @@
+@use "../../styles/variables.module" as v;
+
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: v.$PINK_PRIMARY;
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+.jobTitle {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
+
+.desc {
+    max-width: 800px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+.socialList {
+    display:  flex;
+    gap: 1.5rem;
+}
