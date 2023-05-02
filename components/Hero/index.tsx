@@ -30,8 +30,8 @@ const Hero = (props: Props) => {
       <h1>YUYA SATAKE</h1>
       <p className={styles.jobTitle}>Full Stack Developer</p>
       <p className={styles.desc}>
-        I’m a full stack developer who is passionate about learning new things
-        and enjoys developing
+        I&apos;m a full stack developer who is passionate about learning new
+        things and enjoys developing
       </p>
       <div>
         <ul className={styles.socialList}>

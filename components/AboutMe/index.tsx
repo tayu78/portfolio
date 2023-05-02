@@ -27,15 +27,15 @@ const AboutMe = (props: Props) => {
             <br />
             On my graduation thesis about automatic control of anesthesia, I
             used Python to utilize library good for managing and visualizing
-            actual patient's data.
+            actual patient&apos;s data.
           </p>
           <p>
             After graduated university, I worked as Full Stack Developer
             specializing React.js and Node.js in Japan. Besides developing
             application using React.js and Node.js, I was in charged of DevOps
             by myself without previous knowledge. These experience gave me
-            confidence about learning new technology even if I'm not familiar
-            with that.
+            confidence about learning new technology even if I&apos;m not
+            familiar with that.
           </p>
           <p>
             I decided to move to Vancouver to achieve my desire working diverse
