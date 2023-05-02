@@ -1,0 +1,26 @@
+
+.aboutMe{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
+    .content {
+        display: flex;
+        gap: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: .8rem;
+        line-height: 1.1;
+    }
+
+    img {
+        border-radius: 1rem;
+        margin-top: 2rem;
+        object-fit: cover;
+        object-position: left;
+    }
+}

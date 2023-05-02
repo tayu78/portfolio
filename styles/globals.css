@@ -7,6 +7,10 @@ body {
   color: #fff;
 }
 
-.desc  {
-  font-size: 2rem;
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: #F56262
 }
+
