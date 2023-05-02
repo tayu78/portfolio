@@ -1,4 +1,13 @@
 import Head from "next/head";
+import Header from "@/components/Header/index.";
+import Hero from "@/components/Hero";
+import AboutMe from "@/components/AboutMe";
+import Skills from "@/components/Skills";
+import WorkExperiences from "@/components/WorkExperiences";
+import Projects from "@/components/Projects";
+import Blogs from "@/components/Blogs";
+import Contacts from "@/components/Contacts";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -9,9 +18,35 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <main>
-        <p>This is Yuya Satake</p>
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="aboutMe">
+          <AboutMe />
+        </section>
+
+        <section id="skills">
+          <Skills />
+        </section>
+
+        <section id="workExperiences">
+          <WorkExperiences />
+        </section>
+
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="blogs">
+          <Blogs />
+        </section>
+
+        <section id="contacts">
+          <Contacts />
+        </section>
       </main>
+      <Footer />
     </>
   );
 }
