@@ -1,0 +1,13 @@
+
+.nav {
+    position: fixed;
+    top: 50px;
+    right: 100px;
+    
+    ul {
+        display: flex;
+        gap: 2rem;
+        font-size: 1.5rem;
+        
+    }
+}
