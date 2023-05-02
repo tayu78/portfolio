@@ -1,0 +1,16 @@
+@use "../../../styles/variables.module" as v;
+
+.skillCard{
+    text-align: center;
+    width: 30%;
+    background-color: v.$PINK_SECONDARY;
+    border-radius: 1rem;
+    padding: 2rem;
+    h3 {
+        text-align: center;
+        font-weight: 600;
+    }
+    li{
+        margin-bottom: .5rem;
+    }
+}
