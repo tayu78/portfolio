@@ -1,0 +1,8 @@
+@use "../../../styles/variables.module" as v;
+
+.blogCard {
+    max-width: 35%;
+    border: v.$PINK_PRIMARY 1px solid;
+    padding: 1rem;
+    border-radius: 1rem;
+}
