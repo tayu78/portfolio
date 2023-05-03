@@ -1,2 +1,7 @@
 @use "./variables.module" as *;
 
+@mixin for-sm-screen {
+    @media screen and (max-width: 768px) {
+        @content
+    }
+}
