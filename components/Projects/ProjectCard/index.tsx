@@ -24,7 +24,10 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <div className={styles.projectCard}>
-      <Image src={imgUrl} alt={projectName} width={400} height={200} />
+      <div className={styles.imageContainer}>
+        <Image src={imgUrl} alt={projectName} fill />
+      </div>
+
       <div>
         <h3>{projectName}</h3>
         <p>{description}</p>

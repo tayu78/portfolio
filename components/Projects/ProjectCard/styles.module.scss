@@ -1,3 +1,4 @@
+@use "../../../styles/main.module" as *;
 @use "../../../styles/variables.module" as v;
 
 .projectCard{
@@ -8,6 +9,23 @@
     width: 450px;
     margin: 50px auto;
 
+
+    
+    @include for-sm-screen{
+        width: 300px;
+        img {
+            display: inline-block;
+            margin:  0 auto;
+        }
+    }
+}
+
+.imageContainer{
+    position: relative;
+    height: 250px;
+    @include for-sm-screen{
+        height: 170px;
+    }
 }
 
 .icons {

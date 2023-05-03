@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import ProjectCard from "./ProjectCard";
+import { useMediaQuery } from "react-responsive";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -56,18 +57,18 @@ const datas = [
 ];
 
 const Projects = (props: Props) => {
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <div className={styles.projects}>
       <h2>Projects</h2>
       <div className={styles.cardList}>
         <Swiper
           spaceBetween={50}
-          slidesPerView={2}
+          slidesPerView={isSmallScreen ? undefined : 2}
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
           loop={false}
-          // slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -77,13 +78,10 @@ const Projects = (props: Props) => {
           pagination={{
             el: ".swiper-pagination",
             clickable: true,
-            // bulletClass: styles.bulletClass,
           }}
           navigation={{
             nextEl: ".swiper-button-next",
-
             prevEl: ".swiper-button-prev",
-            //  clickable: true,
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper_container"
