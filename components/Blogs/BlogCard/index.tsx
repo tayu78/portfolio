@@ -13,7 +13,9 @@ const BlogCard = ({ blogUrl, imgUrl, title, description }: Props) => {
   return (
     <article className={styles.blogCard}>
       <a href={blogUrl} target="_blank">
-        <Image src={imgUrl} alt={title} width={350} height={200} />
+        <div className={styles.imageContainer}>
+          <Image src={imgUrl} alt={title} fill />
+        </div>
         <div className="article-content">
           <h3>{title}</h3>
           <p className="desc">{description}</p>
