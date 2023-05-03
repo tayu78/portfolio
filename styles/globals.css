@@ -86,3 +86,19 @@ a {
     background-color: transparent;
     text-decoration: none;
 }
+
+
+
+
+/* swiper */
+.swiper-pagination-bullet{
+  background: #F56262!important;
+}
+.swiper-button-next, .swiper-button-prev{
+  color: #F56262!important;
+  opacity: 0.7;
+
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 10px!important;
+}

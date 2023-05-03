@@ -1,6 +1,13 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import ProjectCard from "./ProjectCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
 type Props = {};
 const datas = [
@@ -53,29 +60,65 @@ const Projects = (props: Props) => {
     <div className={styles.projects}>
       <h2>Projects</h2>
       <div className={styles.cardList}>
-        {datas.map(
-          ({
-            imgUrl,
-            projectName,
-            description,
-            stacks,
-            githubUrl,
-            projectUrl,
-          }) => {
-            return (
-              <React.Fragment key={projectName}>
-                <ProjectCard
-                  imgUrl={imgUrl}
-                  projectName={projectName}
-                  description={description}
-                  stacks={stacks}
-                  githubUrl={githubUrl}
-                  projectUrl={projectUrl}
-                />
-              </React.Fragment>
-            );
-          }
-        )}
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={2}
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={false}
+          // slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+          }}
+          pagination={{
+            el: ".swiper-pagination",
+            clickable: true,
+            // bulletClass: styles.bulletClass,
+          }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+
+            prevEl: ".swiper-button-prev",
+            //  clickable: true,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="swiper_container"
+        >
+          {datas.map(
+            ({
+              imgUrl,
+              projectName,
+              description,
+              stacks,
+              githubUrl,
+              projectUrl,
+            }) => {
+              return (
+                <React.Fragment key={projectName}>
+                  <SwiperSlide>
+                    <ProjectCard
+                      imgUrl={imgUrl}
+                      projectName={projectName}
+                      description={description}
+                      stacks={stacks}
+                      githubUrl={githubUrl}
+                      projectUrl={projectUrl}
+                    />
+                  </SwiperSlide>
+                </React.Fragment>
+              );
+            }
+          )}
+          <div className="slider-controler">
+            <div className="swiper-button-prev slider-arrow"></div>
+            <div className="swiper-button-next slider-arrow"></div>
+            <div className="swiper-pagination"></div>
+          </div>
+        </Swiper>
       </div>
     </div>
   );
