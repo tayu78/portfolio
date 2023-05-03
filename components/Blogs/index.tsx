@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,6 +21,15 @@ const datas = [
 
 const Blogs = (props: Props) => {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
+  let slidesPerView = useMemo(() => {
+    if (isSmallScreen) {
+      return undefined;
+    }
+    if (datas.length > 1) {
+      return 2;
+    }
+    return 1;
+  }, [isSmallScreen]);
 
   return (
     <div className={styles.blogs}>
@@ -28,7 +37,7 @@ const Blogs = (props: Props) => {
       <div className={styles.cardList}>
         <Swiper
           spaceBetween={50}
-          slidesPerView={isSmallScreen ? undefined : 2}
+          slidesPerView={slidesPerView}
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
