@@ -1,3 +1,4 @@
+@use "../../styles/main.module" as *;
 @use "../../styles/variables.module" as v;
 
 
@@ -12,6 +13,10 @@
         font-size: 4rem;
         font-weight: 400;
         margin-bottom: 25px;
+
+        @include for-sm-screen{
+            font-size: 3rem;
+        }
     }
 }
 
@@ -21,12 +26,21 @@
     font-size: 3rem;
     margin-bottom: 20px;
 
+    @include for-sm-screen{
+        font-size: 2rem;
+    }
+
 }
 
 .desc {
     max-width: 800px;
     font-size: 2rem;
     margin-bottom: 20px;
+
+    @include for-sm-screen{
+        font-size: 1rem;
+        text-align: center;
+    }
 
 }
 

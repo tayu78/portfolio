@@ -1,4 +1,5 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -19,9 +20,16 @@ const iconList = {
 };
 
 const Icon = ({ icon }: Props) => {
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
+
   const Component = iconList[icon];
   return (
-    <Component style={{ fill: cssVariables.pinkPrimary, fontSize: "4rem" }} />
+    <Component
+      style={{
+        fill: cssVariables.pinkPrimary,
+        fontSize: isSmallScreen ? "3rem" : "4rem",
+      }}
+    />
   );
 };
 
