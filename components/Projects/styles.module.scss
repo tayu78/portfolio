@@ -1,8 +1,11 @@
+@use "../../styles/variables.module" as v;
+
 .projects {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  
 
 }
 
@@ -12,3 +15,8 @@
     overflow-x: scroll;
 }
 
+
+.moreInfo {
+    color: pink;
+    text-align: center;
+}

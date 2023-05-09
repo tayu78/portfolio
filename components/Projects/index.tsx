@@ -12,9 +12,10 @@ const datas = [
     imgUrl: "/projects/reibunshare.png",
     projectName: "Reibun Share",
     description:
-      "Full stuck application that enable user to find native expression",
+      "Full stuck application that enable user to find language native expression",
     stacks: [
       "React",
+      "Redux",
       "Typescript",
       "Node(Express)",
       "MongoDB",
@@ -22,6 +23,22 @@ const datas = [
     ],
     githubUrl: "https://github.com/tayu78/reibunshare-frontend",
     projectUrl: "https://reibunshare-frontend.vercel.app/",
+  },
+  {
+    imgUrl: "/projects/whistleblowing.png",
+    projectName: "Whistleblowing",
+    description:
+      "robust whistleblowing system that allows employees and stakeholders to report issues without fear of retaliation or negative consequences.",
+    stacks: [
+      "React",
+      "Typescript",
+      "Node(Express)",
+      "MongoDB",
+      "json web token",
+    ],
+    githubUrl:
+      "https://github.com/WMAD-0522-Final-Project/whistleblower-app-backend/tree/dev",
+    projectUrl: "https://dev-whistler-app.vercel.app/login",
   },
   {
     imgUrl: "/projects/auth-management.png",
@@ -57,6 +74,9 @@ const Projects = (props: Props) => {
   return (
     <div className={styles.projects}>
       <h2>Projects</h2>
+      <p className={styles.moreInfo}>
+        please click Github icon for more detail for each project!
+      </p>
       <div className={styles.cardList}>
         <Swiper
           spaceBetween={50}

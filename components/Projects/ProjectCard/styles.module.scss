@@ -8,6 +8,7 @@
     position: relative;
     width: 450px;
     margin: 50px auto;
+   
 
 
     
@@ -34,4 +35,20 @@
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+  
+}
+
+.stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+
+    li{
+        background-color: v.$PINK_PRIMARY;
+        padding: .5rem;
+        
+        border-radius: .5rem;
+    }
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
