@@ -20,7 +20,7 @@ const datas: Data[] = [
   },
   {
     icon: "resume",
-    url: "./images/developer-resume.pdf",
+    url: "/resume.pdf",
   },
 ];
 
