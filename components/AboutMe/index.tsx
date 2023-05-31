@@ -1,21 +1,54 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import SectionTitle from "../SectionTitle";
 import styles from "./styles.module.scss";
 
-type Props = {};
-
-const AboutMe = (props: Props) => {
+const AboutMe = () => {
   return (
     <div className={styles.aboutMe}>
-      <h2>About Me</h2>
+      <SectionTitle title="About Me" />
       <div className={styles.content}>
-        <Image
-          src="/profileImg.jpg"
-          alt="profileImg"
-          width={350}
-          height={450}
-        />
-        <div>
+        <motion.div
+          initial={{
+            x: -300,
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 1,
+          }}
+        >
+          <Image
+            src="/profileImg.jpg"
+            alt="profileImg"
+            width={350}
+            height={450}
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{
+            x: 300,
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 1,
+          }}
+        >
           <p>
             I’m a Japanese developer who graduated from Electrical Engineering
             and Computer Science department in University.
@@ -42,7 +75,7 @@ const AboutMe = (props: Props) => {
             culture and put myself on environment in North America where tech
             industry is big.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
