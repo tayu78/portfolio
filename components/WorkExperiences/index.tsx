@@ -15,7 +15,7 @@ const datas = [
   {
     title: "Full Stack Web Developer ",
     place: "Doctors Mobile",
-    location: "Kyoto, Japan",
+    location: "Japan",
     description: "ndobgggogfndsbo",
     date: "July 2023 - Present",
     icon: "work",
