@@ -13,6 +13,14 @@ type Props = {};
 
 const datas = [
   {
+    title: "Full Stack Web Developer ",
+    place: "Doctors Mobile",
+    location: "Kyoto, Japan",
+    description: "ndobgggogfndsbo",
+    date: "July 2023 - Present",
+    icon: "work",
+  },
+  {
     title: "Web Development Student",
     place: "Cornerstone Community College of Canada",
     location: "Vancouver, Canada",
